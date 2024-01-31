@@ -1,3 +1,3 @@
-- Chris
 - Alexander Sherpa
+- Chris Vidler
 - Shirin
