@@ -1,3 +1,3 @@
 - Chris
-- Alexander
+- Alexander Sherpa
 - Shirin
