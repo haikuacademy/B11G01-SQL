@@ -1,3 +1,3 @@
-- Chris
+- Chris Vidler
 - Alexander
 - Shirin
