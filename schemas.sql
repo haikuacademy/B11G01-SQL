@@ -1,17 +1,17 @@
 CREATE TABLE HOUSES (
-        house_id SERIAL PRIMARY KEY,
-        location VARCHAR(256),
-        bedrooms INT,
-        bathrooms INT,
-        description TEXT,
+        house_id SERIAL PRIMARY KEY NOT NULL,
+        location VARCHAR(256) NOT NULL,
+        bedrooms INT NOT NULL,
+        bathrooms INT NOT NULL,
+        description TEXT NOT NULL,
         host_id INT REFERENCES users(users_id)
 );
 
 CREATE TABLE Bookings (
-        booking_id SERIAL PRIMARY KEY,
+        booking_id SERIAL PRIMARY KEY NOT NULL,
         user_id INT REFERENCES users(user_id),
         house_id INT REFERENCES houses(house_id),
-        booking_start_date DATE,
-        booking_end_date DATE,
-        price FLOAT
+        booking_start_date DATE NOT NULL,
+        booking_end_date DATE NOT NULL,
+        price FLOAT NOT NULL
 );
