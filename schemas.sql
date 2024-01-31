@@ -50,9 +50,9 @@ CREATE TABLE reviews(
 );
 
 INSERT INTO 
-        houses ('house_id', 'location','bedroom', 'bathroom', 'description','host_id')
+        houses (location, bedrooms, bathrooms, description, host_id)
 VALUES 
-        (1,'Koh Phangan', 2, 5,'Amazing room like Donald Trumps bathroom', 2),
-        (2,'Koh Samui', 3, 6, 'Waaawooza',5),
-        (3,'Manchester'2, 3, 'Cold',4),
-        (4,'Bangkok', 5, 7, 'Heavenly', 7);
+        ('Koh Phangan', 2, 5,'Amazing room like Donald Trumps bathroom', 2),
+        ('Koh Samui', 3, 6, 'Waaawooza',2),
+        ('Manchester', 2, 3, 'Cold',1),
+        ('Bangkok', 5, 7, 'Heavenly', 3);
