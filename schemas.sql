@@ -17,6 +17,7 @@ CREATE TABLE houses (
         bedrooms INT NOT NULL,
         bathrooms INT NOT NULL,
         description TEXT NOT NULL,
+        price_per_night FLOAT NOT NULL,
         host_id INT REFERENCES users(user_id)
 );
 
