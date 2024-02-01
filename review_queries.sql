@@ -10,5 +10,5 @@ reviews.review_text, reviews.star_rating, reviews.review_date
     FROM reviews
     JOIN users
     ON reviews.reviewer_id = users.user_id
-    WHERE house_id = 1
+    WHERE reviews.house_id = 1
 ;
