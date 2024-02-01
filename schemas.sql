@@ -37,9 +37,9 @@ CREATE TABLE bookings (
         house_id INT REFERENCES houses(house_id),
         booking_start_date DATE NOT NULL,
         booking_end_date DATE NOT NULL,
-        price FLOAT NOT NULL
+        price FLOAT NOT NULL,
+        message_to_host TEXT
 );
-
 
 -- Create table 4 (reviews)
 

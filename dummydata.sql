@@ -22,12 +22,12 @@ INSERT INTO pictures (pic_url, house_id)
         ('https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_1280.jpg', 1)
 ;
 -- Creation of data for bookings table
-INSERT INTO bookings (user_id, house_id, booking_start_date, booking_end_date, price)
+INSERT INTO bookings (user_id, house_id, booking_start_date, booking_end_date, price, message_to_host)
     VALUES
-        (2, 4, '2024-03-01', '2024-03-03', 800),
-        (1, 3, '2024-04-01', '2024-04-05', 600),
-        (2, 2, '2024-03-05', '2024-03-08', 900),
-        (3, 1, '2024-02-20', '2024-02-21', 500)
+        (2, 4, '2024-03-01', '2024-03-03', 800, 'I expect heaven!'),
+        (1, 3, '2024-04-01', '2024-04-05', 600, 'Please include hot water bottle.'),
+        (2, 2, '2024-03-05', '2024-03-08', 900, NULL),
+        (3, 1, '2024-02-20', '2024-02-21', 500, 'Please clean bathroom thoroughly.')
 ;
 -- Creation of data for reviews table
 INSERT INTO reviews (reviewer_id, house_id, review_text, star_rating, review_date)
