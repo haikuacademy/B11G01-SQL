@@ -24,7 +24,7 @@ CREATE TABLE houses (
 -- Create table 2b (pictures)
 
 CREATE TABLE pictures(
-    picture_id SERIAL NOT NULL,
+    picture_id SERIAL PRIMARY KEY NOT NULL,
     pic_url VARCHAR(256) NOT NULL,
     house_id INT NOT NULL REFERENCES houses(house_id)
 );
@@ -44,7 +44,7 @@ CREATE TABLE bookings (
 -- Create table 4 (reviews)
 
 CREATE TABLE reviews(
-    review_id SERIAL NOT NULL,
+    review_id SERIAL PRIMARY KEY NOT NULL,
     reviewer_id INT NOT NULL REFERENCES users(user_id),
     house_id INT NOT NULL REFERENCES houses(house_id),
     review_text TEXT,
