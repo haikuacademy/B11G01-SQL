@@ -6,7 +6,8 @@ INSERT INTO users (first_name, last_name, email, password, profile_pic_url)
         /*New user email*/, /*New user password*/, /*New user profile pic*/)
 ;
 -- Login (Read)
-SELECT FROM users (email, password)
+SELECT email, password
+FROM users
     WHERE (email = /*logginginuseremailaddress@example.com*/
             AND password = /*logginginuseremailaddress@example.com*/)
 ;
