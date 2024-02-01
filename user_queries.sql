@@ -17,3 +17,8 @@ UPDATE users
     last_name = /*Updated last name*/, email = /*Updated email address*/
     WHERE user_id = /*ID No. of user updating information*/
 ;
+
+-- Read Profile
+
+SELECT * FROM users
+WHERE user_id = 1
