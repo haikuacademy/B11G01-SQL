@@ -14,12 +14,12 @@ WHERE house_id = 2;
 
 -- Update House
 UPDATE houses
-SET location = 'Phangan', bedrooms = 3, bathrooms = 2, price per night = 100, description = 'amazing', pictures = ''
+SET location = 'Koh Phangan', bedrooms = 3, bathrooms = 2, price per night = 100, description = 'amazing', pictures = ''
 WHERE house_id = 1
 ;
 
 -- Delete House
 DELETE 
 FROM houses
-WHERE house_id = 2
+WHERE house_id = 2, location = 'Koh Phangan', bedrooms = 2, bathrooms = 5, description = 'Amazing room like Donald Trumps bathroom'
 ;
