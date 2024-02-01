@@ -46,7 +46,8 @@ WHERE house_id = 2
 -- Create Booking
 
 INSERT INTO bookings (user_id, house_id, booking_start_date, booking_end_date, message_to_host)
-VALUES (1, 3, '2024-03-24', '2024-04-01', 'Thanks for the beautiful stay')
+VALUES 
+        (1, 3, '2024-03-24', '2024-04-01', 'Thanks for the beautiful stay')
 
 -- Read Booking
 
