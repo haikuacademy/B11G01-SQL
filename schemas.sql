@@ -51,11 +51,3 @@ CREATE TABLE reviews(
     star_rating FLOAT NOT NULL,
     review_date DATE NOT NULL
 );
-
-INSERT INTO 
-        houses (location, bedrooms, bathrooms, description, host_id)
-VALUES 
-        ('Koh Phangan', 2, 5,'Amazing room like Donald Trumps bathroom', 2),
-        ('Koh Samui', 3, 6, 'Waaawooza',2),
-        ('Manchester', 2, 3, 'Cold',1),
-        ('Bangkok', 5, 7, 'Heavenly', 3);
