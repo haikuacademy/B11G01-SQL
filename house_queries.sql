@@ -1,10 +1,11 @@
 -- House Queries
 -- Create House
 INSERT INTO
-        houses (location, bedrooms, bathroom, price, description, pictures)
+        houses (host_id, location, bedrooms, bathroom, price, description)
 VALUES
-        ()
+        (1, 'Koh Phangan', 2, 3, 200, 'Amazingly beautiful')
 WHERE
+    user_id = 2
 ;
 
 -- Read House
