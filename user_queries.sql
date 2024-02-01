@@ -2,23 +2,20 @@
 -- Register (Create)
 INSERT INTO users (first_name, last_name, email, password, profile_pic_url)
     VALUES
-        (/*New user first name*/, /*New user last name*/,
-        /*New user email*/, /*New user password*/, /*New user profile pic*/)
+        ('Jean', 'Dupont', 'jdupont@paris.com', 'francais', 'jdateiffeltower.jpg')
 ;
 -- Login (Read)
 SELECT email, password
 FROM users
-    WHERE (email = /*logginginuseremailaddress@example.com*/
-            AND password = /*logginginuseremailaddress@example.com*/)
+    WHERE (email = 'mmustermann@beispiel.com' AND password = '54321')
 ;
 -- Update Profile
 UPDATE users
-    SET profile_pic_url = /*Updated profile pic*/, first_name = /*Updated first name*/, 
-    last_name = /*Updated last name*/, email = /*Updated email address*/
-    WHERE user_id = /*ID No. of user updating information*/
+    SET profile_pic_url = 'jonnysmithnewpic.jpg', first_name = 'Jonny', 
+    last_name = 'Smith', email = 'jonnysmith@example.com'
+    WHERE user_id = 1
 ;
-
 -- Read Profile
-
 SELECT * FROM users
 WHERE user_id = 1
+;
