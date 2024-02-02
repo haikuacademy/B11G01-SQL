@@ -24,3 +24,12 @@ DELETE
 FROM houses
 WHERE house_id = 2
 ;
+
+-- List Houses
+
+SELECT *
+FROM houses 
+FULL JOIN pictures
+ON houses.house_id = pictures.house_id
+WHERE location = 'Koh Phangan', bedrooms = 2, price <350
+;
